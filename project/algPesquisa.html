@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Algoritmos de Pesquisa</title>
+    <link rel="icon" href="images/blocks.ico">
+    <link rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="main">
+    <!-- Navigation Bar -->
+    <div id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/blocks.png" width="40" height="40">
+                <strong>Algoritmos em Informática</strong>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item m-2 border rounded ">
+                        <a href="index.html" class="nav-link pl-2">Início</a>
+                    </li>
+                    <li class="nav-item  m-2 border rounded">
+                        <a href="complexidade.html" class="nav-link pl-2">Complexidade de Algoritmos</a>
+                    </li>
+                    <li class="nav-item m-2 border rounded">
+                        <a class="nav-link pl-2 dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Algoritmos</a>
+                        <div class="dropdown-menu dropdown-menu-right text-left" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="algPesquisa.html">Algoritmos de Pesquisa</a>
+                          <a class="dropdown-item" href="algOrdenacao.html">Algoritmos de Ordenação</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="visualizacao.html">Visualização de Algoritmos</a>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+  </div>
+
+  <!-- Page Body -->
+  <div class="box text">
+    <h1>Algoritmos de Pesquisa</h1>
+    <p>Para algo como a pesquisa de um elemento numa lista, são utilizados algoritmos
+        de pesquisa. No caso da lista não ser ordenada, apenas poderemos realizar uma
+        pesquisa linear (Sequential Search), caso contrário poderemos usar outras estratégias, tais como uma pesquisa binária (Binary Search) ou ternária (Ternary
+    Search)</p>
+    <hr>
+
+    <h2>Sequential Search</h2>
+    <p>Este algoritmo realiza uma pesquisa exaustiva (<strong>Força Bruta</strong>), isto é, itera sobre todos os elementos, desde o início ao fim, até encontrar o que procura.</p>
+    <p>
+        Este algoritmo tem complexidade <strong>O(n)</strong>.</p>
+    </p>
+    <hr>
+
+    <h2>Binary Search</h2>
+    <p>Numa sequência ordenada, a pesquisa binária utiliza a estratégia decrementar
+        para conquistar (<strong>Decrease and Conquer</strong>) com o fator de 2, logo divide a
+        sequência a meio e seleciona a metade que contém o elemento pretendido, dividindo de seguida a metade selecionada. Este processo acaba quando o elemento
+    for encontrado, ou até não ser possível dividir o conjunto em dois.</p>
+    <p>Este algoritmo tem complexidade <strong>O(log2(n))</strong>.</p>
+    <hr>
+
+    <h2>Ternary Search</h2>
+    <p>Utiliza o a mesma estratégia que a pesquisa binária, mas usando um fator de 3,
+        ou seja, divide a sequência em três partes e seleciona a que contém o elemento
+        pretendido, dividindo de seguida a parte selecionada.
+    </p>
+    <p>Este algoritmo tem complexidade <strong>O(log3(n))</strong>.</p>
+</div>
+
+<!-- Button to Top -->
+<div >
+    <a href="#main" class="border rounded-circle bg-light button-top">↑</a>
+</div>
+
+
+<!-- Page Footer -->
+<div class="box footer">
+    <div>
+        <a class="footer" href="acerca.html">Acerca</a>
+    </div>
+    <div class= "footer">
+        ©2022, Algoritmos em Informática
+    </div>
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"></script>
+</body>
+
+</html>

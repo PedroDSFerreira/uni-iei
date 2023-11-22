@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Visualização de Algoritmos de Ordenação</title>
+    <link rel="icon" href="images/blocks.ico">
+    <link rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="main">
+    <!-- Navigation Bar -->
+    <div id="navbar" style="position: sticky; top: 0; z-index: 100;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+            <a class="navbar-brand" href="index.html">
+                <img src="images/blocks.png" width="40" height="40">
+                <strong>Algoritmos em Informática</strong>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item m-2 border rounded ">
+                        <a href="index.html" class="nav-link pl-2">Início</a>
+                    </li>
+                    <li class="nav-item  m-2 border rounded">
+                        <a href="complexidade.html" class="nav-link pl-2">Complexidade de Algoritmos</a>
+                    </li>
+                    <li class="nav-item m-2 border rounded">
+                        <a class="nav-link pl-2 dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Algoritmos</a>
+                        <div class="dropdown-menu dropdown-menu-right text-left" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="algPesquisa.html">Algoritmos de Pesquisa</a>
+                          <a class="dropdown-item" href="algOrdenacao.html">Algoritmos de Ordenação</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="visualizacao.html">Visualização de Algoritmos</a>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+  </div>
+
+  <!-- Page Body -->
+  <div class="box text">
+    <h1>Visualização de Algoritmos de Ordenação</h1>
+    <br>
+    <div class="flex-container border rounded" style="padding-top: 1%; background: #e1e1e1;">
+        <div>
+            <table>
+                <tr><td>
+                    <button class="mini-menu" onclick="selectionSort(data)">Selection Sort</button>
+                </td>
+
+                <td>
+                    <button class="mini-menu" onclick="bubbleSort(data)">Bubble Sort</button>
+                </td>
+
+                <td>
+                    <button class="mini-menu" onclick="insertionSort(data)">Insertion Sort</button>
+                </td>
+
+                <td>
+                    <button class="mini-menu" onclick="shellSort(data)">Shell Sort</button>
+                </td>
+
+                <td>
+                    <button class="mini-menu" onclick="setup()">Reset</button>
+                </td></tr>
+            </table>
+        </div>
+        <div>
+            <div id="canvasHTML"></div>
+
+
+            <input type="range" min="1" id="speed" max="200" value="50" style="width: 85%;">
+            <div style="text-align: center;">Velocidade de Execução</div>
+        </div>
+    </div>
+</div>
+
+<!-- Button to Top -->
+<div >
+    <a href="#main" class="border rounded-circle bg-light button-top">↑</a>
+</div>
+
+
+<!-- Page Footer -->
+<div class="box footer">
+    <div>
+        <a class="footer" href="acerca.html">Acerca</a>
+    </div>
+    <div class= "footer">
+        ©2022, Algoritmos em Informática
+    </div>
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"></script>
+
+<script src="js\Lib\p5.js"></script>
+<script src="js\Data.js"></script>
+<script src="js\Board.js"></script>
+<script src="js\SortingMethods\selectionSort.js"></script>
+<script src="js\SortingMethods\bubbleSort.js"></script>
+<script src="js\SortingMethods\insertionSort.js"></script>
+<script src="js\SortingMethods\shellSort.js"></script>
+<script src="js\sketch.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+* {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 12.5pt;
+	scroll-behavior: smooth;
+}
+
+
+body {
+	background-image: url(images/2.jpg);
+
+	height: 100%;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+h1 {
+	text-align: center;
+	margin: 40px;
+	margin-top: 60px;
+	font-weight: bold;
+}
+
+h2 {
+	text-align: center;
+	margin: 30px;
+	margin-top: 50px;
+}
+
+p {
+	margin: 5%;
+	margin-top: 10px;
+	
+}
+
+
+
+.p1 {
+	text-indent:0;
+}
+
+table {
+
+	display: table;
+	margin: 20px auto
+}
+
+table, th, td {
+	border: 1px solid black;
+
+}
+
+.fill {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+
+	width: 0 auto;
+
+}
+.fill img {
+	flex-shrink: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -1;
+	filter: blur(3px);
+	-webkit-filter: blur(3px);
+
+	outline: 5px solid black;
+
+}
+
+#title {
+	font-size: 60pt;
+	color: whitesmoke;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+}
+
+#button1 {
+	font-size: 13pt;
+	font-weight: bold;
+	position: absolute;
+
+	width: 13em;
+	height: em;
+	bottom: 0%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+}
+
+
+.navbar-nav .nav-item .nav-link {
+	color: #FFFFFF;
+	opacity: 100%;
+}
+.navbar-nav .nav-item .nav-link:hover {
+	font-weight: bold;
+}
+
+
+.box {
+	margin: 0 auto;
+	color: #58595e;
+	padding: 1%;
+	text-align: center;
+}
+
+.text {
+	min-height: 100vh;
+	width: 60%;
+	background: #fefefe;
+
+}
+
+.footer {
+	color: #fafafa;
+	background: #33393f;
+	font-size: 10pt;
+	display: flex;
+	padding-right: 20px;
+	padding-left: 25px;
+	padding-bottom: 5px;
+	justify-content: space-between;
+
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	vertical-align: middle;
+	outline: 5px solid black;
+	padding-bottom: 10px;
+}
+
+
+.button-top {
+	position: fixed;
+	top:90%;
+	left: 90%;
+	padding-top: 0.2%;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 18pt;
+	font-weight: bolder;
+	color: #58595e;
+	
+	width: 2em;
+	height: 2em;
+}
+
+.button-top:hover {
+	color: #343a40;
+}
